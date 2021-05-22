@@ -1,0 +1,15 @@
+---
+application:
+  name: "traffic"
+  project: "traffic"
+  organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "tms"
+  version: "8.0"
+routers:
+- name: "main-traffic"
+  routes:
+  - application_name: "traffic"
+    paths:
+    - "/*"
